@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue@3.0.2"></script>
+</head>
+<body>
+    <div id="app">
+        <ul>
+            <div class="row" v-for="(dude,index) in characters">
+                
+                <a class="ctrl" @click="remove(dude)" title="delete">x</a>
+            <li class="dude" :class="{faded: dude.cool < 10, gold: dude.cool >= 50, top: dude.cool >= 75 }">
+                <h3 name="dude">{{dude.who}}</h3>
+                <small>{{dude.wat}}</small>
+            </li>
+            <input type="number" id="num" v-model.number="dude.cool">
+            </div>
+        </ul>
+        <section class="sec-preview">
+            <p class="preview">
+                {{ newWho }}    <br>
+                <small>{{newWat}}</small>
+            </p>
+            
+
+            <form class="add-new" @keydown.enter="add">
+                <input class="who"type="text" v-model="newWho" ref="new" autofocus>
+                <input class="wat"type="text" v-model="newWat">
+
+            </form>
+        </section> 
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+#app{
+    min-height: 100vh;
+    background: rgb(0, 42, 97);
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    font-family: sans-serif;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+strong,.strong{
+    color: rgb(255, 208, 0);
+    font-weight: normal;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input{
+   border: none;
+   background: transparent;
+   border-bottom: 3px solid #fff;
+   text-align: center;
+   color: #ddd;
+   outline: none;
+   margin: 5px;
+}
+.who{
+    width: 20%;
+}
+.wat{
+    width: 30%;
+}
+ul{
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dude{
+    display: flex;
+    flex-direction: column;
+}
+.preview{
+font-size: 1rem;
+margin: 10px;
+color: rgba(221, 221, 221, 0.611);
+}
+.sec-preview{
+    display: flex;
+    height: 14vh;
+    width: 100vw;
+    /* position: absolute; */
+    /* bottom: 0; */
+    margin-bottom: 10%;
+    flex-direction: column-reverse;
+    margin-top: 10px;
+}
+.dude{
+    color: #fff;
+    background: #9f3fa3;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 9px;
+    margin: 12px auto;
+    padding: 10px 8px;
+    min-width: 360px;
+    border: 4px solid transparent;
+    transition: border-color .35s ease-in-out,
+                opacity .35s ease-in-out,
+                box-shadow .35s ease-in-out;
+
+
+}
+
+.row:nth-child(1) li{
+    background: #9F3FA3;
+}
+.row:nth-child(2) li{
+    background: #ff0000;
+}
+.row:nth-child(3) li{
+    background: #018a94;
+}
+.row:nth-child(4) li{
+    background: #dc0231;
+}
+.row:nth-child(5) li{
+    background: #c0ca00;
+}
+.row:nth-child(6) li{
+    background: #00278a;
+}
+.row:nth-child(7) li{
+    background: #01a014;
+}
+.row:nth-child(8) li{
+    background: #f700ff;
+}
+.row:nth-child(9) li{
+    background: #ff0000;
+}
+
+
+span{
+    font-size: .7rem;
+}
+.faded{
+    opacity: .35;
+}
+.gold{
+    border-color: yellow;
+}
+.top{
+    box-shadow: 0 0 10px 10px yellow;
+}
+.row{
+    display: flex;
+    align-items: center;
+    /*margin-left: -5px;*/
+    transition: .35s;
+}
+a{
+    font-size: .8rem;
+    margin-top: 10px;
+    cursor: pointer;
+}
+small{
+    margin-top: 10px;
+    font-weight: normal;
+    font-size: .7rem;
+}
+#num{
+    border-color: #dddddd80;
+    width: 10%;
+}
